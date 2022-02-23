@@ -7,8 +7,12 @@ public class Rogue extends Char {
 
     @Override
     public void special() {
-        this.hidden = true;
-        System.out.printf("%s disappears into the darkness...", this.getName());
+        if(this.hidden){
+            System.out.printf("%s is already hidden.", this.getName());
+        } else {
+            this.hidden = true;
+            System.out.printf("%s disappears into the darkness...", this.getName());
+        }
     }
 
     @Override
