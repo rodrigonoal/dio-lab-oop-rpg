@@ -1,7 +1,7 @@
 #!/bin/bash
 mvn clean compile
 mvn -B package
-java -jar target/javabank-1.0-SNAPSHOT.jar
+java -jar target/app-1.jar
 
 # shebang:
 # chmod +x script.sh #give permission
